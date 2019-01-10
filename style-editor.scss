@@ -115,18 +115,14 @@ h1 {
 
 h2 {
 	font-size: $font__size-lg;
-
-	@include media(tablet) {
-		font-size: $font__size-xl;
-	}
 }
 
 h3 {
-	font-size: $font__size-lg;
+	font-size: $font__size-md;
 }
 
 h4 {
-	font-size: $font__size-md;
+	font-size: $font__size-sm;
 }
 
 h5 {

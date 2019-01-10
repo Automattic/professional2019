@@ -488,34 +488,36 @@ h6 {
   line-height: 1.25;
 }
 
-h1 {
-  font-size: 2.25em;
-}
-
-@media only screen and (min-width: 768px) {
-  h1 {
-    font-size: 2.8125em;
-  }
-}
-
 .entry-title,
 .not-found .page-title,
 .error-404 .page-title,
 .has-larger-font-size,
+h1 {
+  font-size: 1.6875em;
+}
+
+@media only screen and (min-width: 768px) {
+  .entry-title,
+  .not-found .page-title,
+  .error-404 .page-title,
+  .has-larger-font-size,
+  h1 {
+    font-size: 2.25em;
+  }
+}
+
 h2 {
   font-size: 1.6875em;
 }
 
 .has-regular-font-size,
 .has-large-font-size,
-.comments-title,
 h3 {
   font-size: 1.125em;
 }
 
 .site-title,
 .site-description,
-.main-navigation,
 .nav-links,
 .page-title,
 .page-description,
@@ -524,7 +526,7 @@ h3 {
 h2.author-title,
 p.author-bio,
 h4 {
-  font-size: 0.88889em;
+  font-size: 1.125em;
 }
 
 .pagination .nav-links,
@@ -546,7 +548,7 @@ h5 {
 #cancel-comment-reply-link,
 img:after,
 h6 {
-  font-size: 0.71111em;
+  font-size: 0.88889em;
 }
 
 .page-title {
@@ -3524,11 +3526,6 @@ body.page .main-navigation {
     max-width: inherit;
     padding: inherit;
   }
-}
-
-.entry .entry-content h1, .entry .entry-content h2, .entry .entry-content h3, .entry .entry-content h4, .entry .entry-content h5, .entry .entry-content h6 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .entry .entry-content p.has-background {

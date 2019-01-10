@@ -110,18 +110,12 @@ h2 {
   font-size: 1.6875em;
 }
 
-@media only screen and (min-width: 768px) {
-  h2 {
-    font-size: 2.25em;
-  }
-}
-
 h3 {
-  font-size: 1.6875em;
+  font-size: 1.125em;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-size: 0.88889em;
 }
 
 h5 {

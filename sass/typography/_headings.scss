@@ -64,32 +64,30 @@ h6 {
 	line-height: 1.25;
 }
 
-h1 {
-	font-size: $font__size-xl;
-
-	@include media(tablet) {
-		font-size: $font__size-xxl;
-	}
-}
-
 .entry-title,
 .not-found .page-title,
 .error-404 .page-title,
 .has-larger-font-size,
+h1 {
+	font-size: $font__size-lg;
+
+	@include media(tablet) {
+		font-size: $font__size-xl;
+	}
+}
+
 h2 {
 	font-size: $font__size-lg;
 }
 
 .has-regular-font-size,
 .has-large-font-size,
-.comments-title,
 h3 {
 	font-size: $font__size-md;
 }
 
 .site-title,
 .site-description,
-.main-navigation,
 .nav-links,
 .page-title,
 .page-description,
@@ -98,7 +96,7 @@ h3 {
 h2.author-title,
 p.author-bio,
 h4 {
-	font-size: $font__size-sm;
+	font-size: $font__size-md;
 }
 
 .pagination .nav-links,
@@ -120,7 +118,7 @@ h5 {
 #cancel-comment-reply-link,
 img:after,
 h6 {
-	font-size: $font__size-xs;
+	font-size: $font__size-sm;
 }
 
 .page-title {
