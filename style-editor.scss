@@ -575,12 +575,25 @@ figcaption,
 .wp-block-media-text {
 	background: $color__background-screen;
 	color: #fff;
-}
 
-//Remove spacing between consecutive Media & Text blocks. 
-[data-type="core/media-text"]{
-	& + [data-type="core/media-text"] {
-		margin-top: -32px;
+	position: relative;
+
+	// Modify the default 50-50 proportion between image and text.
+	grid-template-columns: 60% auto; 
+
+	&.has-media-on-the-right {
+		grid-template-columns: auto 60%;
+	}
+
+	&:before{
+		content:'';
+		position: absolute;
+		left: 1%;
+		top: 3%;
+		width: 98%;
+		height: 94%;
+		border: 2px solid rgba(255,255,255,0.5);
+		z-index: 1;
 	}
 }
 

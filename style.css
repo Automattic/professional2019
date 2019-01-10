@@ -4194,10 +4194,34 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-media-text {
   background: #0d1b24;
   color: #fff;
+  position: relative;
 }
 
-.entry .entry-content .wp-block-media-text + .wp-block-media-text {
-  margin-top: -32px;
+.entry .entry-content .wp-block-media-text:before {
+  content: '';
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 98%;
+  height: 98%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .entry .entry-content .wp-block-media-text:before {
+    top: 3%;
+    height: 94%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .entry .entry-content .wp-block-media-text {
+    grid-template-columns: 60% auto;
+  }
+  .entry .entry-content .wp-block-media-text.has-media-on-the-right {
+    grid-template-columns: auto 60%;
+  }
 }
 
 .entry .entry-content .wp-block-columns.alignfull {

@@ -116,11 +116,6 @@
 
 .entry .entry-content {
 
-	h1, h2, h3, h4, h5, h6 {
-		padding-top: #{$size__spacing-unit * 2};
-		padding-bottom: #{$size__spacing-unit * 2};
-	}
-
 	//! Paragraphs
 	p.has-background {
 		padding: 20px 30px;
@@ -713,7 +708,7 @@
 		code {
 			font-size: $font__size-md;
 			white-space: pre-wrap;
-    	                word-break: break-word;
+						word-break: break-word;
 		}
 	}
 
@@ -722,8 +717,33 @@
 		background: $color__background-screen;
 		color: #fff;
 
-		& + .wp-block-media-text {
-			margin-top: -32px;
+		position: relative;
+
+		&:before{
+			content:'';
+			position: absolute;
+			left: 1%;
+			top: 1%;
+			width: 98%;
+			height: 98%;
+			border: 2px solid rgba(255,255,255,0.5);
+			z-index: 1;
+		}
+
+		@include media(mobile) {
+			&:before{
+				top: 3%;
+				height: 94%;
+			}
+		}
+
+		@include media(tablet) {
+			// Modify the default 50-50 proportion between image and text.
+			grid-template-columns: 60% auto; 
+
+			&.has-media-on-the-right {
+				grid-template-columns: auto 60%;
+			}
 		}
 	}
 

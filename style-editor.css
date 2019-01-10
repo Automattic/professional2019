@@ -556,10 +556,23 @@ figcaption,
 .wp-block-media-text {
   background: #0d1b24;
   color: #fff;
+  position: relative;
+  grid-template-columns: 60% auto;
 }
 
-[data-type="core/media-text"] + [data-type="core/media-text"] {
-  margin-top: -32px;
+.wp-block-media-text.has-media-on-the-right {
+  grid-template-columns: auto 60%;
+}
+
+.wp-block-media-text:before {
+  content: '';
+  position: absolute;
+  left: 1%;
+  top: 3%;
+  width: 98%;
+  height: 94%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  z-index: 1;
 }
 
 /** === Table === */
