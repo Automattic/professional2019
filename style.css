@@ -4231,19 +4231,23 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-media-text:before {
   content: '';
   position: absolute;
-  left: 1%;
-  top: 1%;
-  width: 98%;
-  height: 98%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  left: 2%;
+  top: 2%;
+  width: 96%;
+  height: 96%;
+  border: 2px solid #fff;
   z-index: 1;
 }
 
 @media only screen and (min-width: 600px) {
   .entry .entry-content .wp-block-media-text:before {
-    top: 3%;
-    height: 94%;
+    top: 5.6%;
+    height: 88.8%;
   }
+}
+
+.entry .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+  padding-left: 13%;
 }
 
 @media only screen and (min-width: 768px) {
