@@ -33,8 +33,8 @@ body {
 		.editor-post-title__block,
 		.editor-default-block-appender,
 		.editor-block-list__block {
-			margin-left: 0;
-			margin-right: 0;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.wp-block[data-align="wide"] {
@@ -69,11 +69,11 @@ body {
 	max-width: 100%;
 
 	@include media(tablet) {
-		width: calc(8 * (100vw / 12));
+		width: calc(8 * (100vw / 12) - 28px);
 	}
 
 	@include media(desktop) {
-		width: calc(6 * (100vw / 12 ));
+		width: calc(6 * (100vw / 12 ) - 28px);
 	}
 
 	// Only the top level blocks need specific widths, therefore override for every nested block.

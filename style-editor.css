@@ -29,8 +29,8 @@ body .wp-block[data-align="full"] {
   body .editor-post-title__block,
   body .editor-default-block-appender,
   body .editor-block-list__block {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
   body .wp-block[data-align="wide"] {
     width: 100%;
@@ -60,13 +60,13 @@ body .wp-block[data-align="full"] {
 
 @media only screen and (min-width: 768px) {
   .wp-block {
-    width: calc(8 * (100vw / 12));
+    width: calc(8 * (100vw / 12) - 28px);
   }
 }
 
 @media only screen and (min-width: 1168px) {
   .wp-block {
-    width: calc(6 * (100vw / 12 ));
+    width: calc(6 * (100vw / 12 ) - 28px);
   }
 }
 
