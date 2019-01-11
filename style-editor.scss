@@ -595,6 +595,11 @@ figcaption,
 		border: 2px solid rgba(255,255,255,0.5);
 		z-index: 1;
 	}
+
+	// Make sure the text is editable.
+	.editor-inner-blocks {
+		z-index: 2;
+	}
 }
 
 /** === Table === */

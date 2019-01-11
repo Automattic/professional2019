@@ -575,6 +575,10 @@ figcaption,
   z-index: 1;
 }
 
+.wp-block-media-text .editor-inner-blocks {
+  z-index: 2;
+}
+
 /** === Table === */
 .wp-block-table td, .wp-block-table th {
   border-color: #767676;
