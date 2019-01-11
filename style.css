@@ -3236,10 +3236,6 @@ body.page .main-navigation {
 ## Footer
 --------------------------------------------------------------*/
 /* Site footer */
-#colophon {
-  border-top: 1px solid #ececec;
-}
-
 #colophon .widget-area,
 #colophon .site-info {
   margin: calc(2 * 1rem) 1rem;
