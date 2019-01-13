@@ -737,6 +737,15 @@
 			}
 		}
 
+		.wp-block-media-text__content {
+			z-index: 2;
+
+			a,
+			a:hover {
+				color: #fff;
+			}
+		}
+
 		&.has-media-on-the-right .wp-block-media-text__content {
 			padding-left: 13%;
 		}

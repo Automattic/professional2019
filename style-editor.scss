@@ -585,6 +585,11 @@ figcaption,
 		grid-template-columns: auto 60%;
 	}
 
+	a,
+	a:hover {
+		color: #fff;
+	}
+
 	&:before{
 		content:'';
 		position: absolute;

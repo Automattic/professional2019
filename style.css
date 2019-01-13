@@ -4242,6 +4242,15 @@ body.page .main-navigation {
   }
 }
 
+.entry .entry-content .wp-block-media-text .wp-block-media-text__content {
+  z-index: 2;
+}
+
+.entry .entry-content .wp-block-media-text .wp-block-media-text__content a,
+.entry .entry-content .wp-block-media-text .wp-block-media-text__content a:hover {
+  color: #fff;
+}
+
 .entry .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
   padding-left: 13%;
 }

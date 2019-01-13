@@ -564,6 +564,11 @@ figcaption,
   grid-template-columns: auto 60%;
 }
 
+.wp-block-media-text a,
+.wp-block-media-text a:hover {
+  color: #fff;
+}
+
 .wp-block-media-text:before {
   content: '';
   position: absolute;
