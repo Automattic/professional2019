@@ -6,7 +6,7 @@
 	.site-info {
 
 		@include postContentMaxWidth();
-		margin: calc(2 * #{$size__spacing-unit}) auto;
+		margin: calc(2 * #{$size__spacing-unit}) $size__spacing-unit;
 
 		@include media(tablet) {
 			margin: calc(1.5 * #{$size__spacing-unit}) auto;
