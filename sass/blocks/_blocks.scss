@@ -504,7 +504,7 @@
 	.wp-block-cover-image,
 	.wp-block-cover {
 		position: relative;
-		min-height: 430px;
+		min-height: 460px;
 		padding: $size__spacing-unit;
 
 		@include media(tablet) {
@@ -549,7 +549,10 @@
 			.wp-block-cover-image-text,
 			.wp-block-cover-text,
 			h2 {
+				width: 100%;
 				@include postContentMaxWidth();
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			@include media(tablet) {
@@ -726,7 +729,7 @@
 			top: 2%;
 			width: 96%;
 			height: 96%;
-			border: 2px solid #fff;
+			border: 1px solid #fff;
 			z-index: 1;
 		}
 
@@ -746,17 +749,21 @@
 			}
 		}
 
-		&.has-media-on-the-right .wp-block-media-text__content {
-			padding-left: 13%;
-		}
-
-
 		@include media(tablet) {
 			// Modify the default 50-50 proportion between image and text.
 			grid-template-columns: 60% auto; 
 
+			.wp-block-media-text__content {
+				padding-right: 13%;
+			}
+
 			&.has-media-on-the-right {
 				grid-template-columns: auto 60%;
+
+				.wp-block-media-text__content {
+					padding-left: 13%;
+					padding-right: 8px;
+				}
 			}
 		}
 	}

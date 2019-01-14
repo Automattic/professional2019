@@ -46,7 +46,6 @@ h4,
 h5,
 h6 {
 	font-weight: 600;
-	letter-spacing: -0.02em;
 	line-height: $font__line-height-heading;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -108,7 +107,6 @@ h5 {
 .entry-meta,
 .entry-footer,
 .discussion-meta-info,
-.site-info,
 .site-description,
 .has-small-font-size,
 .comment-reply-link,
@@ -121,6 +119,10 @@ h6 {
 	font-size: $font__size-sm;
 }
 
+.site-info {
+	font-size: $font__size-xs;
+}
+
 .page-title {
 	font-weight: normal;
 }
@@ -128,10 +130,6 @@ h6 {
 .page-description,
 .page-links a {
 	font-weight: bold;
-}
-
-.site-description {
-	letter-spacing: -0.01em;
 }
 
 .page-id-3669 .entry .entry-header {

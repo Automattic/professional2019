@@ -306,7 +306,7 @@ figcaption,
   .wp-block[data-type="core/cover"][data-align="wide"] .wp-block-cover-text,
   .wp-block[data-type="core/cover"][data-align="full"] h2,
   .wp-block[data-type="core/cover"][data-align="full"] .wp-block-cover-text {
-    max-width: calc(8 * (100vw / 12));
+    max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
 
@@ -315,7 +315,7 @@ figcaption,
   .wp-block[data-type="core/cover"][data-align="wide"] .wp-block-cover-text,
   .wp-block[data-type="core/cover"][data-align="full"] h2,
   .wp-block[data-type="core/cover"][data-align="full"] .wp-block-cover-text {
-    max-width: calc(6 * (100vw / 12));
+    max-width: calc(6 * (100vw / 12) - 28px);
   }
 }
 
@@ -576,7 +576,7 @@ figcaption,
   top: 5.6%;
   height: 88.8%;
   width: 96%;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   z-index: 1;
 }
 
