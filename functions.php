@@ -16,12 +16,25 @@ if ( ! function_exists( 'professional2019_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function professional2019_setup() {
-	/*
-	 * Probably not necessary
+
+	/**
+	 * Add support for core custom logo.
+	 *
+	 * @link https://codex.wordpress.org/Theme_Logo
 	 */
+	add_theme_support(
+		'custom-logo',
+		array(
+			'height'      => 120,
+			'width'       => 190,
+			'flex-width'  => true,
+			'flex-height' => false,
+			'header-text' => array( 'site-title' ),
+		)
+	);
 }
 endif; // professional2019_setup
-add_action( 'after_setup_theme', 'professional2019_setup' );
+add_action( 'after_setup_theme', 'professional2019_setup', 30 );
 
 function professional2019_fonts_url() {
 
@@ -81,3 +94,7 @@ add_action( 'enqueue_block_editor_assets', 'professional2019_block_editor_script
  */
 require get_stylesheet_directory() . '/inc/jetpack.php';
 
+/**
+ * Customizer additions.
+ */
+require get_stylesheet_directory() . '/inc/customizer.php';
