@@ -16,7 +16,7 @@
 
 	@include media(tablet) {
 		margin: 0;
-		padding: 1rem 0;
+		padding: 2rem 0;
 
 		&.featured-image {
 			min-height: 100vh;
@@ -63,6 +63,7 @@
 	color: $color__text-main;
 	font-size: $font__size-md;
 	flex: 1 1 auto;
+	margin: 0;
 
 	a {
 		color: $color__text-main;

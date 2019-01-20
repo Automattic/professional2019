@@ -4272,7 +4272,7 @@ body.page .main-navigation {
   }
   .entry .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
     padding-right: 13%;
-    padding-left: 8px;
+    padding-left: 8%;
   }
   .entry .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content :first-child {
     margin-top: 1rem;
