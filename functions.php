@@ -1,13 +1,13 @@
 <?php
 /**
- * Professional (Twenty Nineteen) functions and definitions.
+ * Professional Business (Twenty Nineteen) functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Professional_2019
+ * @package Professional_Business
  */
 
-if ( ! function_exists( 'professional2019_setup' ) ) :
+if ( ! function_exists( 'professional_business_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,7 +15,7 @@ if ( ! function_exists( 'professional2019_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function professional2019_setup() {
+function professional_business_setup() {
 
 	/**
 	 * Add support for core custom logo.
@@ -33,10 +33,10 @@ function professional2019_setup() {
 		)
 	);
 }
-endif; // professional2019_setup
-add_action( 'after_setup_theme', 'professional2019_setup', 30 );
+endif; // professional_business_setup
+add_action( 'after_setup_theme', 'professional_business_setup', 30 );
 
-function professional2019_fonts_url() {
+function professional_business_fonts_url() {
 
 	$fonts_url = '';
 
@@ -44,7 +44,7 @@ function professional2019_fonts_url() {
 	* supported by Open Sans, translate this to 'off'. Do not translate
 	* into your own language.
 	*/
-	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'professional2019' );
+	$crimson_text = esc_html_x( 'on', 'Crimson Text font: on or off', 'professional-business' );
 
 	if ( 'off' !== $crimson_text ) {
 		$font_families = array();
@@ -67,27 +67,27 @@ function professional2019_fonts_url() {
 /**
  * Enqueue scripts and styles.
  */
-function professional2019_scripts() {
+function professional_business_scripts() {
 
 	/**
 	 * Styles
 	 */
-	wp_enqueue_style( 'professional2019-fonts', professional2019_fonts_url(), array(), null );
+	wp_enqueue_style( 'professional-business-fonts', professional_business_fonts_url(), array(), null );
 
 }
-add_action( 'wp_enqueue_scripts', 'professional2019_scripts' );
+add_action( 'wp_enqueue_scripts', 'professional_business_scripts' );
 
 /**
  * Enqueue supplemental block editor scripts.
  */
-function professional2019_block_editor_scripts() {
+function professional_business_block_editor_scripts() {
 
 	/**
 	 * Block Editor Scripts
 	 */
-	wp_enqueue_script( 'professional2019-block-editor-filters', get_theme_file_uri( '/js/block-editor-filters.js' ), array(), '1.0', true );
+	wp_enqueue_script( 'professional-business-block-editor-filters', get_theme_file_uri( '/js/block-editor-filters.js' ), array(), '1.0', true );
 }
-add_action( 'enqueue_block_editor_assets', 'professional2019_block_editor_scripts' );
+add_action( 'enqueue_block_editor_assets', 'professional_business_block_editor_scripts' );
 
 /**
  * Load Jetpack compatibility file.

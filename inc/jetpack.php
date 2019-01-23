@@ -4,13 +4,13 @@
  *
  * @link https://jetpack.com/
  *
- * @package Professional_2019
+ * @package Professional_Business
  */
 
 /**
  * Jetpack Setup
  */
-function professional2019_jetpack_setup() {
+function professional_business_jetpack_setup() {
 	/*
 	 * The Parent theme alredy comes with Jetpack compatibility
 	 *
@@ -18,7 +18,7 @@ function professional2019_jetpack_setup() {
 	 * if even necessary at all.
 	 */
 }
-add_action( 'after_setup_theme', 'professional2019_jetpack_setup' );
+add_action( 'after_setup_theme', 'professional_business_jetpack_setup' );
 
 /**
  * Enqueue Jetpack-specific styles
@@ -29,7 +29,7 @@ add_action( 'after_setup_theme', 'professional2019_jetpack_setup' );
  * See `elegant2019/style-jetpack.scss`
  * Also see: https://github.com/Automattic/jetpack/blob/master/modules/theme-tools/compat/twentynineteen.css
  */
-function professional2019_jetpack_styles() {
-	wp_enqueue_style( 'elegant2019-jetpack', get_stylesheet_directory_uri() . '/style-jetpack.css', '20181218' );
+function professional_business_jetpack_styles() {
+	wp_enqueue_style( 'professional-business-jetpack', get_stylesheet_directory_uri() . '/style-jetpack.css', '20181218' );
 }
-add_action( 'wp_enqueue_scripts', 'professional2019_jetpack_styles' );
+add_action( 'wp_enqueue_scripts', 'professional_business_jetpack_styles' );

@@ -1,9 +1,9 @@
 <?php
 /**
- * Professional 2019: Customizer
+ * Professional Business: Customizer
  *
  * @package WordPress
- * @subpackage Professional 2019
+ * @subpackage Professional_Business
  * @since 1.0.0
  */
 
@@ -12,7 +12,7 @@
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function professional2019_customize_register( $wp_customize ) {
-    $wp_customize->get_control( 'header_text' )->label = __( 'Display Site Title', 'professional2019' );
+function professional_business_customize_register( $wp_customize ) {
+    $wp_customize->get_control( 'header_text' )->label = __( 'Display Site Title', 'professional-business' );
 }
-add_action( 'customize_register', 'professional2019_customize_register' );
+add_action( 'customize_register', 'professional_business_customize_register' );

@@ -1,16 +1,16 @@
 @charset "UTF-8";
 /*
-Theme Name: Professional (Twenty Nineteen)
-Theme URI: https://github.com/WordPress/twentynineteen
-Author: the WordPress team
-Author URI: https://wordpress.org/
+Theme Name: Professional Business (Twenty Nineteen)
+Theme URI: https://github.com/automattic/themes
+Author: Automattic
+Author URI: https://wordpress.com/
 Template: twentynineteen
 Description: A new Gutenberg-ready theme.
 Requires at least: WordPress 4.9.6
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: twentynineteen-child
+Text Domain: professional-business
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -2017,7 +2017,6 @@ body.page .main-navigation {
   font-size: 1.125em;
   flex: 1 1 auto;
   margin: 0;
-  /* Adjust Crimson Text font vertical alignment in Firefox */
 }
 
 .site-title a {
@@ -2036,8 +2035,9 @@ body.page .main-navigation {
   margin: 0;
 }
 
-@-moz-document url-prefix() & {
-  .site-title .site-title {
+/* Adjust Crimson Text font vertical alignment in Firefox */
+@-moz-document url-prefix() {
+  .site-title {
     padding-top: 8px;
   }
 }
