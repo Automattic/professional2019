@@ -2017,6 +2017,7 @@ body.page .main-navigation {
   font-size: 1.125em;
   flex: 1 1 auto;
   margin: 0;
+  /* Adjust Crimson Text font vertical alignment in Firefox */
 }
 
 .site-title a {
@@ -2035,11 +2036,18 @@ body.page .main-navigation {
   margin: 0;
 }
 
+@-moz-document url-prefix() & {
+  .site-title .site-title {
+    padding-top: 8px;
+  }
+}
+
 .site-description {
-  flex: initial;
   color: #1e1e1e;
+  flex: initial;
   font-size: 0.71111em;
   font-weight: normal;
+  margin: 7px 0 0;
 }
 
 .site-header.featured-image {

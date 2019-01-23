@@ -83,11 +83,19 @@
 	}
 }
 
+/* Adjust Crimson Text font vertical alignment in Firefox */
+@-moz-document url-prefix() {
+	.site-title {
+		padding-top: 8px;
+	}
+}
+
 // Site description
 
 .site-description {
-	flex: initial;
 	color: $color__text-main;
+	flex: initial;
 	font-size: $font__size-xs;
 	font-weight: normal;
+	margin: 7px 0 0;
 }
