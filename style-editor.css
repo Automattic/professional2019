@@ -243,6 +243,10 @@ figcaption,
 }
 
 /** === Cover === */
+.wp-block-cover {
+  min-height: 345px;
+}
+
 .wp-block-cover h2,
 .wp-block-cover .wp-block-cover-text {
   font-family: "Crimson Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
@@ -268,6 +272,7 @@ figcaption,
 
 @media only screen and (min-width: 768px) {
   .wp-block-cover {
+    min-height: 460px;
     padding-left: 10%;
     padding-right: 10%;
   }
@@ -560,7 +565,7 @@ figcaption,
 
 .wp-block-media-text a,
 .wp-block-media-text a:hover {
-  color: #fff;
+  color: inherit;
 }
 
 .wp-block-media-text:before {

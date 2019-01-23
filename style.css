@@ -1963,7 +1963,7 @@ body.page .main-navigation {
 ## Header
 --------------------------------------------------------------*/
 .site-header {
-  padding: 1em;
+  padding: 1rem;
 }
 
 .site-header.featured-image {
@@ -2186,8 +2186,20 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .site-header.featured-image .site-featured-image .entry-header {
-    margin-left: calc(10% + 60px);
-    margin-right: calc(10% + 60px);
+    max-width: calc(8 * (100vw / 12) - 28px);
+  }
+}
+
+@media only screen and (min-width: 1168px) {
+  .site-header.featured-image .site-featured-image .entry-header {
+    max-width: calc(6 * (100vw / 12) - 28px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header.featured-image .site-featured-image .entry-header {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -3923,7 +3935,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover-image,
 .entry .entry-content .wp-block-cover {
   position: relative;
-  min-height: 460px;
+  min-height: 345px;
   padding: 1rem;
 }
 
@@ -3931,6 +3943,7 @@ body.page .main-navigation {
   .entry .entry-content .wp-block-cover-image,
   .entry .entry-content .wp-block-cover {
     padding: 1rem 10%;
+    min-height: 460px;
   }
 }
 

@@ -94,6 +94,8 @@
 
 		.entry-header {
 
+			@include postContentMaxWidth()
+
 			margin-top: calc( 4 * #{$size__spacing-unit});
 			margin-bottom: 0;
 			margin-left: 0;
@@ -101,8 +103,8 @@
 
 			@include media (tablet) {
 
-				margin-left: $size__site-margins;
-				margin-right: $size__site-margins;
+				margin-left: auto;
+				margin-right: auto;
 			}
 
 			.entry-title {
