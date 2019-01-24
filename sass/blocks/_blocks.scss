@@ -746,33 +746,29 @@
 		&:before{
 			content:'';
 			position: absolute;
-			left: 2%;
-			top: 2%;
-			width: 96%;
-			height: 96%;
+			top: 10px;
+			right: 10px;
+			bottom: 10px;
+			left: 10px;
 			border: 1px solid #fff;
 			z-index: 1;
 		}
 
 		.wp-block-media-text__content {
+			margin-bottom: 10px;
 			z-index: 2;
 
 			a,
 			a:hover {
 				color: inherit;
 			}
-
-			& :last-child {
-				margin-bottom: 1.5em;
-			}
 		}
 		
 		@include media(mobile) {
-			&:before{
-				top: 5.6%;
-				height: 88.8%;
-			}
 
+			.wp-block-media-text__content {
+				margin-top: 10px;
+			}
 		}
 
 		@include media(tablet) {
@@ -781,10 +777,6 @@
 
 			.wp-block-media-text__content {
 				padding-right: 13%;
-
-				:last-child {
-					margin-bottom: $size__spacing-unit;
-				}
 			}
 
 			&.has-media-on-the-right {
@@ -793,10 +785,6 @@
 				.wp-block-media-text__content {
 					padding-left: 13%;
 					padding-right: 8%;
-
-					:first-child {
-						margin-top: $size__spacing-unit;
-					}
 				}
 			}
 		}
