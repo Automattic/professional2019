@@ -245,8 +245,12 @@ figcaption,
 /** === Cover === */
 
 .wp-block-cover {
-	
+
 	min-height: 345px;
+
+	.editor-rich-text {
+		margin: auto;
+	}
 
 	h2,
 	.wp-block-cover-text {
@@ -306,7 +310,7 @@ figcaption,
 
 		h2,
 		.wp-block-cover-text {
-			max-width: calc(8 * (100vw / 12) - 28px);
+			max-width: calc(8 * (100vw / 12) - 43px); // 43px is the 28px + 15px -- half of the padding on blocks like paragraph
 		}
 	}
 
@@ -314,7 +318,7 @@ figcaption,
 
 		h2,
 		.wp-block-cover-text {
-			max-width: calc(6 * (100vw / 12) - 28px);
+			max-width: calc(6 * (100vw / 12) - 43px); // 43px is the 28px + 15px -- half of the padding on blocks like paragraph
 		}
 	}
 }
@@ -574,7 +578,7 @@ figcaption,
 	position: relative;
 
 	// Modify the default 50-50 proportion between image and text.
-	grid-template-columns: 60% auto; 
+	grid-template-columns: 60% auto;
 
 	&.has-media-on-the-right {
 		grid-template-columns: auto 60%;
@@ -614,7 +618,7 @@ figcaption,
 /** === Separator === */
 
 .wp-block-separator {
-	
+
 	background: #fff;
 	max-width: 100%;
 	@include postContentMaxWidth();

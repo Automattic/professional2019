@@ -247,6 +247,10 @@ figcaption,
   min-height: 345px;
 }
 
+.wp-block-cover .editor-rich-text {
+  margin: auto;
+}
+
 .wp-block-cover h2,
 .wp-block-cover .wp-block-cover-text {
   font-family: "Crimson Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
@@ -305,7 +309,7 @@ figcaption,
   .wp-block[data-type="core/cover"][data-align="wide"] .wp-block-cover-text,
   .wp-block[data-type="core/cover"][data-align="full"] h2,
   .wp-block[data-type="core/cover"][data-align="full"] .wp-block-cover-text {
-    max-width: calc(8 * (100vw / 12) - 28px);
+    max-width: calc(8 * (100vw / 12) - 43px);
   }
 }
 
@@ -314,7 +318,7 @@ figcaption,
   .wp-block[data-type="core/cover"][data-align="wide"] .wp-block-cover-text,
   .wp-block[data-type="core/cover"][data-align="full"] h2,
   .wp-block[data-type="core/cover"][data-align="full"] .wp-block-cover-text {
-    max-width: calc(6 * (100vw / 12) - 28px);
+    max-width: calc(6 * (100vw / 12) - 43px);
   }
 }
 
